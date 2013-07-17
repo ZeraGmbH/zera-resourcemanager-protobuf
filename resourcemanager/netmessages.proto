@@ -1,12 +1,6 @@
 package ProtobufMessage;
 
 message NetMessage {
-enum MessageType {
-    UNKNOWN = 0;
-    SCPI_COMMAND = 1;
-    NET_REPLY = 2;
-  }
-  required MessageType type = 1 [default = UNKNOWN];
   message ScpiCommand {
     required string Command = 1;
     optional string Parameter = 2;
@@ -21,7 +15,7 @@ enum MessageType {
       DEBUG = 3;
       IDENT = 4;
     }
-    required ReplyType rtype = 1 [default = ACK];
+    required ReplyType RType = 1 [default = ACK];
     optional string Body = 2;
   }
 

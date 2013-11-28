@@ -20,5 +20,6 @@ message NetMessage {
   }
 
   optional NetReply reply = 3;
+  optional bytes uuid = 4;
 }
 

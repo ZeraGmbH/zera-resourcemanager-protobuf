@@ -20,6 +20,7 @@ message NetMessage {
   }
 
   optional NetReply reply = 3;
-  optional bytes uuid = 4;
+  optional bytes clientId = 4;
+  optional uint32 messageNr = 5;
 }
 

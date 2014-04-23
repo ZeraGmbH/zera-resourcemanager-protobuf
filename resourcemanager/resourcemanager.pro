@@ -8,7 +8,7 @@ QT       -= core gui
 
 TARGET = zera-resourcemanager-protobuf
 TEMPLATE = lib
-CONFIG += staticlib
+#CONFIG += staticlib
 
 unix:!symbian {
     maemo5 {

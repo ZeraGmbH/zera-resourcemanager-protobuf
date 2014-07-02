@@ -19,8 +19,16 @@ message NetMessage {
     optional string Body = 2;
   }
 
+  message NetCmd {
+    enum CmdType {
+      RELEASE = 0;
+    }
+    required CmdType Cmd = 1 [default = RELEASE];
+  }
+
   optional NetReply reply = 3;
   optional bytes clientId = 4;
   optional uint32 messageNr = 5;
+  optional NetCmd netcommand = 6;
 }
 

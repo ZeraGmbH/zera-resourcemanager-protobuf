@@ -1,5 +1,8 @@
 name: CI
-
+# TODO:
+# * deploy install artefacts
+# * common actions?
+# * hardened buildflags
 on:
   push:
     branches:

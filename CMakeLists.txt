@@ -101,7 +101,7 @@ include(CMakePackageConfigHelpers)
 write_basic_package_version_file(
     zeraprotobufConfigVersion.cmake
     VERSION ${PACKAGE_VERSION}
-    COMPATIBILITY SameMinorVersion
+    COMPATIBILITY SameMajorVersion
     )
 
 # configure MarkdownQtConfig.cmake
